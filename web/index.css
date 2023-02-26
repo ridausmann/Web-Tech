@@ -1,0 +1,195 @@
+.container {
+    /* display: flex; */
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+
+    flex: 0.25;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #708896;
+    align-items: center;
+    padding: 1%;
+}
+
+.top-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 6rem;
+
+}
+
+.top-p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.top-lower {
+    margin-right: 4rem;
+}
+
+.top-upper {
+    margin-left: 4rem;
+    /* height: 50px; */
+}
+
+.bottom {
+    display: flex;
+    flex: 0.75;
+    flex-direction: row;
+    background-color: pink;
+}
+
+.left {
+    display: flex;
+    flex: 0.25;
+    background-color: #273136;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.right {
+    display: flex;
+    flex: 0.75;
+    background-color: #D7E5EC;
+    flex-direction: column;
+}
+
+.obj {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.obj-text {
+    font-size: 18px;
+}
+
+.objective {
+    margin: 3rem;
+
+}
+
+.education {
+    margin-left: 3rem;
+    border-top: solid black;
+    margin-bottom: 3rem;
+}
+
+.edu {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.edu1 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.edu2 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.edu3 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.projects {
+    margin-left: 3rem;
+    border-top: solid black;
+}
+
+.proj {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.proj1 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.proj2 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.proj3 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.p-info {
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.pi {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.pi1 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.pi2 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.pi3 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.skills {
+    /* margin-left: 3rem; */
+    border-top: solid whitesmoke;
+}
+
+.exp {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.exp1 {
+    margin-top: 1rem;
+    font-size: 16px;
+    margin-left: 4rem;
+}
+
+.interest {
+    margin-top: 3rem;
+    border-top: solid whitesmoke;
+}
+
+.int {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.int1 {
+    margin-top: 1rem;
+    font-size: 16px;
+    margin-left: 4rem;
+}
