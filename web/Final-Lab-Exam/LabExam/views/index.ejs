@@ -1,0 +1,36 @@
+<h1>Areas</h1>
+<div class="row">
+  <div class="col-sm-8">
+    <h1></h1>
+  </div>
+  <div class="col-sm-4">
+    <a href="/areas/addArea" class="btn btn-success float-right ">Add new Area</a>
+  </div>
+</div>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Locality</th>
+    <th>Attractions</th>
+  </tr>
+  <tbody>
+    <% for( let index=0; index < area.length; index++ ) { %>
+      <tr>
+        <td>
+          <%=area[index].name %>
+        </td>
+        <td>
+          <%=area[index].locality %>
+        </td>
+        <td>
+          <%=area[index].attractions %>
+        </td>
+        <td>
+          <a href="/delete/<%= area[index]._id %>" , class="btn btn-danger">Delete</a>
+          <a href="/areas/editArea/<%= area[index]._id %>" , class="btn btn-warning">Edit</a>
+        </td>
+      </tr>
+      <% }%>
+
+  </tbody>
+</table>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Area List</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Area List</h1>
+    <ul id="areaList"></ul>
+
+    <script>
+        $(document).ready(function () {
+            // Get all areas
+            $.get('/areas', function (areas) {
+                const areaList = $('#areaList');
+                areaList.empty();
+                areas.forEach(function (area) {
+                    areaList.append(`<li>Area: ${area.name} - Locality: - ${area.locality} - Attractions: ${area.locality}</li>`);
+
+
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
