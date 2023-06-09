@@ -1,0 +1,50 @@
+<div style="margin-top: 10rem;">
+    <div class="container my-40">
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <th>Destination</th>
+                    <th>Price</th>
+                    <th>Time</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <% wishlist.forEach(elem=> { %>
+
+                    <tr>
+                        <td>
+                            <%=elem.destination %>
+                        </td>
+                        <td>
+                            <%=elem.price %>
+                        </td>
+                        <td>
+                            <%=elem.time %>
+                        </td>
+                        <td>
+                            <div style="height: 30px; width: 30px;">
+                                <img src="<%=elem.image%>" alt="" style="height: 30px; width: 30px;">
+                            </div>
+                        </td>
+
+
+
+                        <td>
+                            <a class="btn btn-danger" href="/wishlist/remove/<%=elem._id%>">Delete</a>
+                        </td>
+                    </tr>
+
+                    <% }) %>
+
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+</div>

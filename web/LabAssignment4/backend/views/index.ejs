@@ -1,0 +1,133 @@
+<section class="home" id="home">
+    <div class="home-text">
+        <h1>Fuel Mind <br> Travel</h1>
+        <p>Enthusiastically extend extensive customer service before <br> best breed coverage completely</p>
+        <a href="#" class="home-btn">Let's go now</a>
+    </div>
+</section>
+
+<section class="container">
+    <div class="text">
+        <h1>
+            Start Your Vacation <br> with Lots of Services!
+        </h1>
+    </div>
+
+    <div class="row-items">
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/trip1.png" alt="">
+            </div>
+            <h4>Ship Cruises</h4>
+            <p>150 Properties</p>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/trip2.jpg" alt="">
+            </div>
+            <h4>Food Tours</h4>
+            <p>150 Properties</p>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/trip3.jpg" alt="">
+            </div>
+            <h4>Summer Rest</h4>
+            <p>150 Properties</p>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/trip4.jpg" alt="">
+            </div>
+            <h4>Mountain Tours</h4>
+            <p>150 Properties</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="package" id="package">
+    <div class="title">
+        <h2>Our Upcoming <br> Tour Package</h2>
+    </div>
+
+    <div class="package-content">
+        <% for( let index=0; index < tour.length; index++ ) { %>
+            <div class="box">
+
+                <div class="thum">
+                    <img src="<%=tour[index].image%>" alt="">
+                    <h3>
+                        <%=tour[index].price%>
+                    </h3>
+                </div>
+                <div class="dest-container">
+                    <div class="location">
+                        <h4>
+                            <%=tour[index].destination%>
+                        </h4>
+                        <p>
+                            <%=tour[index].time%>
+                        </p>
+                        <a href="/delete/<%= tour[index]._id %>" , class="btn btn-danger">Delete</a>
+                        <a href="/edit/<%= tour[index]._id %>" , class="btn btn-warning">Edit</a>
+                        <a href="/wishlist/<%= tour[index]._id %>" , class="btn btn-info">Wishlist</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <% } %>
+
+
+
+    </div>
+
+
+</section>
+
+<section class="destination" id="destination">
+    <div class="title">
+        <h2>Our Most Popular <br> Destination!</h2>
+
+    </div>
+    <div class="destination-content">
+        <div class="col-content">
+            <img src="images/kalam.jpg" alt="">
+            <h5>Kalam</h5>
+            <p>PERU</p>
+        </div>
+        <div class="col-content">
+            <img src="images/kalam.jpg" alt="">
+            <h5>Kalam</h5>
+            <p>PERU</p>
+        </div>
+        <div class="col-content">
+            <img src="images/kalam.jpg" alt="">
+            <h5>Kalam</h5>
+            <p>PERU</p>
+        </div>
+        <div class="col-content">
+            <img src="images/kalam.jpg" alt="">
+            <h5>Kalam</h5>
+            <p>PERU</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="news-text">
+        <h2>Newsletter</h2>
+    </div>
+    <div class="send">
+        <form action="">
+            <input type="email" placeholder="Write Your Email" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
